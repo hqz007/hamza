@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+        }
+        header {
+            background-image: url('header-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        header h1 {
+            position: relative;
+            font-size: 4em;
+            margin: 0;
+            z-index: 1;
+        }
+        header p {
+            position: relative;
+            font-size: 1.5em;
+            z-index: 1;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .clients img, .portfolio img {
+            max-width: 100%;
+            margin: 10px 0;
+            transition: transform 0.2s;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .clients img:hover, .portfolio img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.2s;
+        }
+        .social-icons a:hover {
+            color: #4CAF50;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        h2 {
+            /*font-family: 'Lora', serif;*/
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background-color: #000000;">
+        <div class="container" >
+            <h1 style="position: relative;
+  font-size: 2.8em;
+
+  font-weight: 500;">Hello, 👋 i'm<br>
+            Hamza Qamer</h1>
+            <p style="font-size: 16px;"> With 5 years of experience, I specialize in developing effective web solutions for clients. <br>My focus is on creating innovative and user-friendly digital experiences that fulfill client needs. </p>
+
+           <!--  <a style="margin-top: 20px; margin-top: 20px;
+  font-size: 18px; color: #ffffff;" href="portfolio.php" class="btn btn-border border-white aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">See My Work</a> -->
+        </div>
+    </header>
+
+   <!--  <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I am [Your Name], a [Your Profession]. I specialize in [Your Specialization]. Welcome to my portfolio!</p>
+        </div>
+    </section> -->
+
+    
+    <section id="portfolio" style="background-color:#e6e6e6;">
+        <div class="container">
+            <h2>Some Of My Projects</h2>
+            <div class="row">
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://www.cryptocipher.in/" target="blank"><img style="width: 100%;" src="cryptocipher.jpg" alt="Project 1"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://variolineintercool.com/pk/" target="blank"><img style="width: 100%;" src="varioline.jpg" alt="Project 2"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://www.multynet.com.pk/" target="blank"><img style="width: 100%;" src="multynet.jpg" alt="Project 3"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://www.bedsclick.co.uk/" target="blank"><img style="width: 100%;" src="bed.jpg" alt="Project 3"></a></div>
+
+
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://pkstore.se/" target="blank"><img style="width: 100%;" src="pkstore.jpg" alt="Project 1"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://polydoors.com.pk" target="blank"><img style="width: 100%;" src="polydoors.jpg" alt="Project 2"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://eodbpunjab.com/portal/" target="blank"><img style="width: 100%;" src="piu.jpg" alt="Project 3"></a></div>
+
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://ncaonlineteacher.ca/" target="blank"><img style="width: 100%;" src="nca.jpg" alt="Project 1"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://rimnews.pk/" target="blank"><img style="width: 100%;" src="rimnews.jpg" alt="Project 2"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://www.stridehealth.com/" target="blank"><img style="width: 100%;" src="stride.jpg" alt="Project 3"></a></div>
+
+
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://panelmarketing.ca/" target="blank"><img style="width: 100%;" src="panel-mark.jpg" alt="Project 1"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://panthertyres.com/" target="blank"><img style="width: 100%;" src="panther.jpg" alt="Project 2"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://dpr.gob.pk/" target="blank"><img style="width: 100%;" src="dpr.jpg" alt="Project 3"></a></div>
+
+
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://curelinkhealthcare.com/" target="blank"><img style="width: 100%;" src="comega.jpg" alt="Project 1"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://www.saybangroup.com/" target="blank"><img style="width: 100%;" src="curelink.jpg" alt="Project 2"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://mobligate.com/" target="blank"><img style="width: 100%;" src="mobligate.jpg" alt="Project 3"></a></div>
+
+
+
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://peakhealthcalgary.com/" target="blank"><img style="width: 100%;" src="strivehealth.jpg" alt="Project 1"></a></div>
+               
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="http://unifoam.pk/" target="blank"><img style="width: 100%;" src="unifoam.jpg" alt="Project 3"></a></div>
+
+                 <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://rmzlaw.co.uk/" target="blank"><img style="width: 100%;" src="rmz.jpg" alt="Project 3"></a></div>
+                 <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://nsandw.ca/" target="blank"><img style="width: 100%;" src="nationalspine.jpg" alt="Project 3"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://goversityconsulting.com/" target="blank"><img style="width: 100%;" src="goversity.jpg" alt="Project 3"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://thrivenowphysio.com/" target="blank"><img style="width: 100%;" src="thrivenow.jpg" alt="Project 3"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://dvvc.ca/" target="blank"><img style="width: 100%;" src="visioncare.jpg" alt="Project 3"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="https://creativeevents.pk" target="blank"><img style="width: 100%;" src="creative-events.jpg" alt="Project 3"></a></div>
+              
+
+
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="#" target="blank"><img style="width: 100%;" src="rangraqs.jpg" alt="Project 3"></a></div>
+
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="#" target="blank"><img style="width: 100%;" src="mash.jpg" alt="Project 1"></a></div>
+                <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="#" target="blank"><img style="width: 100%;" src="fg.jpg" alt="Project 2"></a></div>
+             <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="#" target="blank"><img style="width: 100%;" src="superfunbox.jpg" alt="Project 2"></a></div>
+               <div class="col-12 col-md-4" style="margin-bottom: 20px;"><a href="#" target="blank"><img style="width: 100%;" src="ams.jpg" alt="Project 3"></a></div>
+
+
+
+
+
+                <!-- Add more project images as needed -->
+            </div>
+        </div>
+    </section>
+
+
+<section id="clients" style="background-color: #ffffff;">
+        <div class="container">
+            <h2>Folks I Have Worked With</h2>
+            <div class="row">
+                <div class="col-6 col-md-3"><img src="1.png" alt="Client 1"></div>
+                <div class="col-6 col-md-3"><img src="2.png" alt="Client 2"></div>
+                <div class="col-6 col-md-3"><img src="3.png" alt="Client 3"></div>
+                <div class="col-6 col-md-3"><img src="4.png" alt="Client 4"></div>
+                <div class="col-6 col-md-3"><img src="6.png" alt="Client 6"></div>
+                <div class="col-6 col-md-3"><img src="7.png" alt="Client 7"></div>
+                <div class="col-6 col-md-3"><img src="8.png" alt="Client 8"></div>
+                <div class="col-6 col-md-3"><img src="9.png" alt="Client 9"></div>
+                <!-- Add more client logos as needed -->
+
+                <div class="col-6 col-md-3"><img src="10.png" alt="Client 1"></div>
+                <div class="col-6 col-md-3"><img src="11.png" alt="Client 2"></div>
+                <div class="col-6 col-md-3"><img src="12.png" alt="Client 3"></div>
+                <div class="col-6 col-md-3"><img src="13.png" alt="Client 4"></div>
+                <div class="col-6 col-md-3"><img src="14.png" alt="Client 6"></div>
+                <div class="col-6 col-md-3"><img src="15.png" alt="Client 7"></div>
+                <div class="col-6 col-md-3"><img src="16.png" alt="Client 8"></div>
+                <div class="col-6 col-md-3"><img src="17.png" alt="Client 9"></div>
+
+
+                <div class="col-6 col-md-3"><img src="18.png" alt="Client 6"></div>
+                <div class="col-6 col-md-3"><img src="19.png" alt="Client 7"></div>
+                <div class="col-6 col-md-3"><img src="20.png" alt="Client 8"></div>
+                <div class="col-6 col-md-3"><img src="21.png" alt="Client 9"></div>
+                <div class="col-6 col-md-3"><img src="23.png" alt="Client 9"></div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #000000;">
+       
+        <div class="container">
+             <h2>Contact Me</h2>
+                <div class="row">
+                     <div class="col-6 col-md-6">
+                         
+                             <p>Email: <a href="mailto:hamzaqamer1995@gmail.com">hamzaqamer1995@gmail.com</a></p>
+                             <p>Tel: <a href="tel:+92 3244333037">hamzaqamer1995@gmail.com</a></p>
+                             <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                             </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                         
+                             <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                             <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                             </div>
+                        </div>
+
+
+                </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
